@@ -2,7 +2,7 @@ from js import document
 from pyscript import display
 
 
-def intrams_checker(e):
+def intrams_checker(event=None)
     document.getElementById('output').innerHTML = ' '
     document.getElementById('image').innerHTML = ' '
 
@@ -53,4 +53,5 @@ def intrams_checker(e):
     else: 
         display(f"FIGHT STRONG! GO GREEN HORNETS!", target='output')
         document.getElementById("image").innerHTML = '<img src="green_hornets.jpg" alt="Green Hornets" style="max-width:200px;">'
+
 
