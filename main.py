@@ -1,4 +1,4 @@
-from js import document
+from js import document, window
 from pyscript import display
 
 
@@ -53,6 +53,9 @@ def intrams_checker(event=None):
     else: 
         display(f"FIGHT STRONG! GO GREEN HORNETS!", target='output')
         document.getElementById("image").innerHTML = '<img src="green_hornets.jpg" alt="Green Hornets" style="max-width:200px;">'
+
+
+window.intrams_checker = intrams_checker
 
 
 
